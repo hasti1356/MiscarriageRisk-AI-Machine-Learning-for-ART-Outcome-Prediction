@@ -43,3 +43,49 @@ pip install -r requirements.txt
 
 # Run the main prediction script
 python src/main.py
+
+📈 Model Performance
+![Model Performance][]
+
+🔗 Directory Structure```
+MiscarriageRisk-AI/
+├── data/ # Data files (not tracked by git)
+├── notebooks/ # Jupyter notebooks for analysis
+├── src/ # Source code
+├── tests/ # Unit tests
+└── docs/ # Documentation
+
+markdown
+
+Copy
+
+## 📚 Documentation
+
+Detailed documentation is available in the `docs/` directory:
+- Data Processing Pipeline
+- Feature Engineering Methods
+- Model Architecture
+- Evaluation Metrics
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+- Email: mozr2010@gmail.com
+- LinkedIn: [Your LinkedIn]
+- Twitter: [Your Twitter]
+
+## 📖 Citation
+
+If you use this work in your research, please cite:```bibtex
+@article{zare2024miscarriage,
+  title={Using Machine Learning to Predict the Risk of Miscarriage in Infertile Couples Undergoing Assisted Reproductive Cycles},
+  author={Zare, Mohadese},
+  year={2024}
+}```
