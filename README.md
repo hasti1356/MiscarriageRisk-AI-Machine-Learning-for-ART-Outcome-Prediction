@@ -7,7 +7,7 @@
 
 
 
-```markdown
+
 # 📚 Documentation
 
 <div align="center">
@@ -29,6 +29,10 @@ graph LR
     style E fill:#dfd,stroke:#333,stroke-width:2px
     style F fill:#ffd,stroke:#333,stroke-width:2px
 ```
+
+</div>
+
+
 
 ## 🔍 Key Components
 
