@@ -5,7 +5,7 @@
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-PyTorch-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Here's a more visually appealing version of the documentation section:
+
 
 ```markdown
 # 📚 Documentation
@@ -129,13 +129,4 @@ graph LR
 </div>
 ```
 
-This version includes:
-- Enhanced mermaid diagram with colors and better flow
-- Structured tables with icons and detailed breakdowns
-- Better visual hierarchy with badges and icons
-- More detailed citation information
-- Status badges at the bottom
-- Consistent styling throughout
-- Better spacing and organization
 
-Would you like me to modify any specific part of this layout further?
