@@ -1,0 +1,35 @@
+# config/model_config.yaml
+model:
+  learning_rate: 0.001
+  epochs: 100
+  batch_size: 32
+  early_stopping_patience: 10
+  reduce_lr_patience: 5
+  min_lr: 0.000001
+
+features:
+  n_features: 20
+  use_pca: true
+  pca_variance_ratio: 0.95
+  interaction_features:
+    - age
+    - bmi
+    - fsh_lh_ratio
+    - hormone_balance_score
+    - response_ratio
+
+training:
+  validation_split: 0.2
+  test_split: 0.15
+  random_seed: 42
+  cross_validation_folds: 5
+
+paths:
+  data_dir: "data/"
+  model_dir: "models/"
+  logs_dir: "logs/"
+  results_dir: "results/"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
