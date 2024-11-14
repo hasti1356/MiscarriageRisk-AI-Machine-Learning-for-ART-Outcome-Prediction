@@ -112,7 +112,7 @@ MiscarriageRisk-AI/
 └── 📜 README.md           # Project documentation
 ```
 
-Here's a more visually appealing version of the documentation section:
+
 
 ```markdown
 # 📚 Documentation
