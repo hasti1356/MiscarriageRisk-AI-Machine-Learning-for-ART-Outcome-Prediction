@@ -136,7 +136,7 @@ graph LR
 
 ## 📞 Contact & Social
 
-<div align="center">[![Email](https://img.shields.io/badge/Email-mozr2010%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:mozr2010@gmail.com)[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](your-linkedin-url)[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?style=for-the-badge&logo=twitter)](your-twitter-url)
+- Email: mozr2010@gmail.com
 
 </div>
 
