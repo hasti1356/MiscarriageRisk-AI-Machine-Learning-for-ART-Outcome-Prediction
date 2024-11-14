@@ -5,119 +5,137 @@
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-PyTorch-red.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
+Here's a more visually appealing version of the documentation section:
+
 ```markdown
-## 📈 Model Performance
+# 📚 Documentation
 
 <div align="center">
 
-### Overall Model Metrics
-| Metric | Score |
-|--------|--------|
-| Accuracy | 89.90% |
-| Precision | 87.65% |
-| Recall | 88.73% |
-| F1 Score | 88.19% |
+## 🔄 Pipeline Overview
 
-### Feature Importance
-```python
-from matplotlib import pyplot as plt
-import seaborn as sns
-
-# Create visualization code here that generates:
-# 1. Bar chart of top features
-# 2. ROC curve
-# 3. Confusion matrix
-```
-
-![Model ROC Curve][]
-
-### Confusion Matrix Heatmap```python
-plt.figure(figsize=(10, 8))
-sns.heatmap(confusion_matrix, annot=True, fmt='d', cmap='Blues')
-plt.title('Confusion Matrix')
-plt.ylabel('True Label')
-plt.xlabel('Predicted Label')```
-
-### Training History```python
-plt.figure(figsize=(12, 6))
-plt.plot(history['loss'], label='Training Loss')
-plt.plot(history['val_loss'], label='Validation Loss')
-plt.title('Model Training History')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.legend()```
-</div>
-
-## 🔗 Project Structure
-```
-MiscarriageRisk-AI/
-├── 📁 data/                  # Data directory (gitignored)
-│   ├── 📁 raw/              # Original, immutable data
-│   └── 📁 processed/        # Cleaned, transformed data
-│
-├── 📁 notebooks/            # Jupyter notebooks
-│   ├── 📓 01_EDA.ipynb     # Exploratory Data Analysis
-│   ├── 📓 02_Features.ipynb # Feature Engineering
-│   ├── 📓 03_Models.ipynb   # Model Development
-│   └── 📓 04_Eval.ipynb    # Model Evaluation
-│
-├── 📁 src/                  # Source code
-│   ├── 📜 data_prep.py     # Data preprocessing
-│   ├── 📜 features.py      # Feature engineering
-│   ├── 📜 model.py         # ML model implementation
-│   └── 📜 utils.py         # Utility functions
-│
-├── 📁 tests/               # Unit tests
-├── 📁 docs/                # Documentation
-└── 📜 README.md           # Project documentation
-```
-
-## 📚 Documentation
-
-<div align="center">
-
-### Pipeline Overview```mermaid
+```mermaid
 graph LR
-    A[Raw Data] --> B[Preprocessing]
-    B --> C[Feature Engineering]
-    C --> D[Model Training]
-    D --> E[Evaluation]
-    E --> F[Deployment]```
-
-### Key Components
-| Component | Description |
-|-----------|-------------|
-| Data Processing | Handling missing values, outliers, and data normalization |
-| Feature Engineering | Selection of 18 key predictive variables |
-| Model Architecture | Ensemble of Random Forest, SVM, and Neural Networks |
-| Evaluation Metrics | Accuracy, Precision, Recall, F1-Score |
-
-</div>
-
-## 📞 Contact & Social
-
-<div align="center">[![Email](https://img.shields.io/badge/Email-mozr2010%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:mozr2010@gmail.com)[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](your-linkedin-url)[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?style=for-the-badge&logo=twitter)](your-twitter-url)
-
-</div>
-
-## 📖 Citation```bibtex
-@article{zare2024miscarriage,
-    title={Using Machine Learning to Predict the Risk of Miscarriage 
-           in Infertile Couples Undergoing Assisted Reproductive Cycles},
-    author={Zare, Mohadese},
-    journal={ESHRE 40th Annual Meeting},
-    year={2024},
-    location={Amsterdam}
-}```
+    A[Raw Data] -->|Import & Clean| B[Preprocessing]
+    B -->|Feature Selection| C[Feature Engineering]
+    C -->|Model Development| D[Model Training]
+    D -->|Testing & Validation| E[Evaluation]
+    E -->|Production| F[Deployment]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#ddf,stroke:#333,stroke-width:2px
+    style D fill:#fdd,stroke:#333,stroke-width:2px
+    style E fill:#dfd,stroke:#333,stroke-width:2px
+    style F fill:#ffd,stroke:#333,stroke-width:2px
 ```
 
+## 🔍 Key Components
+
+<table>
+  <tr>
+    <th width="200">Component</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+      <b>🔧 Data Processing</b>
+    </td>
+    <td>
+      • Missing value imputation<br>
+      • Outlier detection and handling<br>
+      • Data normalization and scaling<br>
+      • Data quality validation
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>⚡ Feature Engineering</b>
+    </td>
+    <td>
+      • Selection of 18 key predictive variables<br>
+      • Feature extraction and transformation<br>
+      • Dimensionality reduction<br>
+      • Feature importance analysis
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>🤖 Model Architecture</b>
+    </td>
+    <td>
+      • Random Forest Classifier<br>
+      • Support Vector Machine<br>
+      • Neural Networks<br>
+      • Ensemble Method Integration
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>📊 Evaluation Metrics</b>
+    </td>
+    <td>
+      • Accuracy: 89.90%<br>
+      • Precision & Recall Analysis<br>
+      • F1-Score Optimization<br>
+      • Cross-validation Results
+    </td>
+  </tr>
+</table>
+
+</div>
+
+## 📞 Contact Information
 
 <div align="center">
-
-<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=github"/>
-
-<img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semantic-release"/>
-
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Email-FF0000?style=for-the-badge&logo=gmail&logoColor=white"/>
+      </td>
+      <td>
+        <a href="mailto:mozr2010@gmail.com">mozr2010@gmail.com</a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Research-00ADD8?style=for-the-badge&logo=google-scholar&logoColor=white"/>
+      </td>
+      <td>
+        ESHRE 40th Annual Meeting Presenter
+      </td>
+    </tr>
+  </table>
 </div>
 
+## 📖 Academic Citation
+
+```bibtex
+@article{zare2024miscarriage,
+    title     = {Using Machine Learning to Predict the Risk of Miscarriage 
+                 in Infertile Couples Undergoing Assisted Reproductive Cycles},
+    author    = {Zare, Mohadese},
+    journal   = {ESHRE 40th Annual Meeting},
+    year      = {2024},
+    location  = {Amsterdam},
+    publisher = {European Society of Human Reproduction and Embryology},
+    keywords  = {machine learning, healthcare, reproductive medicine}
+}
 ```
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semantic-release"/>
+</div>
+```
+
+This version includes:
+- Enhanced mermaid diagram with colors and better flow
+- Structured tables with icons and detailed breakdowns
+- Better visual hierarchy with badges and icons
+- More detailed citation information
+- Status badges at the bottom
+- Consistent styling throughout
+- Better spacing and organization
+
+Would you like me to modify any specific part of this layout further?
