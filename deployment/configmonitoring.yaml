@@ -1,0 +1,52 @@
+# deployment/config/monitoring.yaml
+
+prometheus:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  alerting_rules:
+    - alert: HighCPUUsage
+      expr: cpu_usage_percent > 80
+      for: 5m
+      labels:
+        severity: warning
+    - alert: HighMemoryUsage
+      expr: memory_usage_percent > 85
+      for: 5m
+      labels:
+        severity: warning
+    - alert: APIHighLatency
+      expr: http_request_duration_seconds > 2
+      for: 5m
+      labels:
+        severity: critical
+
+grafana:
+  dashboards:
+    - name: "API Performance"
+      panels:
+        - title: "Request Rate"
+          type: "graph"
+          metrics:
+            - "rate(http_requests_total[5m])"
+        - title: "Error Rate"
+          type: "graph"
+          metrics:
+            - "rate(http_requests_errors_total[5m])"
+    - name: "Model Performance"
+      panels:
+        - title: "Prediction Accuracy"
+          type: "gauge"
+          metrics:
+            - "model_accuracy"
+        - title: "Prediction Latency"
+          type: "graph"
+          metrics:
+            - "prediction_duration_seconds"
+
+alerts:
+  email:
+    recipients:
+      - "alerts@example.com"
+  slack:
+    webhook_url: "${SLACK_WEBHOOK_URL}"
+    channel: "#alerts"
